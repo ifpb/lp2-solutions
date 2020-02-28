@@ -1,4 +1,4 @@
-const salario = prompt("Salario:");
+const salario = 3500;
 
 if (salario < 1903.99){
    taxa = 0;
