@@ -1,8 +1,10 @@
-function soma(v1,v2){
-    let n1 =  Number(prompt('Digite um valor ai moral'));
-    let n2 =  Number (prompt ('Digite outro valor por favor'));
-    let s = n1 + n2;
-    console.log(s)
+
+    let n1 =  4;
+    let n2 =  10;
+    function soma(v1,v2){
+        soma = n1 + n2
+
+    console.log(soma);
      }
     
-    soma()
+    soma(n1,n2);
