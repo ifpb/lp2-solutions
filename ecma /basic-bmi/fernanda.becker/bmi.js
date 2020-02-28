@@ -1,5 +1,5 @@
-const weight = prompt("Altura:");
-const height = prompt("Peso:");
+const weight = 200;
+const height = 1.5;
 const bmi = weight / height **2;
 if (bmi > 18.5){
     console.log("Underweight");
