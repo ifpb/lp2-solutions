@@ -1,6 +1,6 @@
-let h = 10;
-let sum = 0;
-for ( let i = 1; i <= h; i++){
+let soma = 0;
+let a = 10;
+for ( let i = 1; i <= a; i++){
     sum += l/1
 }
-console.log (sum)
+console.log (soma)
