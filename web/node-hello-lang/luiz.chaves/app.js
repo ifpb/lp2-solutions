@@ -8,15 +8,15 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader("Content-Type", "text/plain");
 
-  // if (req.url === "pt") {
+  // if (req.url === "/pt") {
   //   res.end("Olá mundo!");
-  // } else if (req.url === "en") {
+  // } else if (req.url === "/en") {
   //   res.end("Hello world!");
   // }
 
   const hello = {
-    pt: "Olá mundo!",
-    en: "Hello world!"
+    "/pt": "Olá mundo!",
+    "/en": "Hello world!"
   };
 
   res.end(hello[req.url]);
