@@ -6,3 +6,5 @@ function soma(valor1,valor2){
      }
     
 soma();
+
+export {soma,valor1,valor2}
