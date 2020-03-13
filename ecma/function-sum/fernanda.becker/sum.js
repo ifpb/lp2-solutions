@@ -1,8 +1,10 @@
-function soma(v1,v2){
-    let n1 =  Number(1);
-    let n2 =  Number (2);
+function soma(valor1,valor2){
+    let n1 =  1;
+    let n2 =  2;
     let s = n1 + n2;
     console.log(s)
      }
     
-    soma();
+soma();
+
+export {soma,valor1,valor2}
