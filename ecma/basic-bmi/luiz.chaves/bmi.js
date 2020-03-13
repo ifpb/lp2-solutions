@@ -1,16 +1,17 @@
-const weight = 200;
-const height = 1.5;
+const weight = 150;
+const height = 2;
 const bmi = weight / height ** 2;
-let result;
+let result = "";
 
-if (bmi <= 18,5) {
-    result = "Underweight";	    
-} else if (bmi <= 24,9) {
-    result = "Normal weight";	    
-} else if (bmi <= 29,9) {
-    result = "Overweight";	    
+if (bmi < 18.5) {
+  result = "Underweight";
+} else if (bmi < 25) {
+  result = "Normal weight";
+} else if (bmi < 30) {
+  result = "Overweight";
 } else {
-    result = "Obesity";	        
-} 
+  result = "Obesity";
+}
 
-console.log(`BMI: ${result}`)
+// Obesity
+console.log(result);

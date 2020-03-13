@@ -1,9 +1,17 @@
-let result = '';
 
-for (let number = 99; number >= 0; number -= 1) {
-  const whiteSpace = number % 10 ? ' ' : '\n';
-  const value = number < 10 ? `0${number}` : number;
-  result += value + whiteSpace;
+let result = "";
+
+for (let flag = 99; flag >= 0; flag--) {
+  if (flag  < 10) {
+    result += "0"+flag;
+  } else {
+    result += flag;
+  }
+  if (flag % 10 === 0) {
+    result += "\n";
+  } else {
+    result += " ";
+  }
 }
 
 console.log(result);

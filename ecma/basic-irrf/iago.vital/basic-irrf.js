@@ -1,5 +1,5 @@
 
-let salario = 5000;
+let salario = 2000;
 let tax;
 if(salario <= 1903.98){
   tax = 0;

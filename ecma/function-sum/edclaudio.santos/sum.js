@@ -5,4 +5,7 @@ function suma(a,b){
 }
 
 
+module.exports = suma
+
 console.log(suma(x,y))
+
