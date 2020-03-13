@@ -1,21 +1,25 @@
-const salary = 3500;
-let tax;
+const salary = 3000;
+let taxRate = 0;
+let deduction = 0;
 
-switch (true) {
-  case salary < 1903.99:
-    tax = 0;
-    break;
-  case salary < 2826.66:
-    tax = 0.075 * salary - 142.8;
-    break;
-  case salary < 3751.06:
-    tax = 0.15 * salary - 354.8;
-    break;
-  case salary < 4664.68:
-    tax = 0.225 * salary - 636.13;
-    break;
-  default:
-    tax = 0.275 * salary - 869.36;
+if (salary <= 1903.98) {
+  taxRate = 0;
+  deduction = 0;
+} else if (salary <= 2826.65) {
+  taxRate = 0.075;
+  deduction = 142.8;
+} else if (salary <= 3751.05) {
+  taxRate = 0.15;
+  deduction = 354.8;
+} else if (salary <= 4664.68) {
+  taxRate = 0.225;
+  deduction = 636.13;
+} else {
+  taxRate = 0.275;
+  deduction = 869.36;
 }
 
-console.log(`IRRF: ${tax}`);
+const tax = salary * taxRate - deduction;
+
+// 95,20
+console.log(tax.toFixed(2));

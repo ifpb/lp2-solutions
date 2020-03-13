@@ -1,8 +1,9 @@
-const size = 10;
-let sum = 0;
+const n = 10;
+let result = 0;
 
-for (let number = 1; number <= size; number += 1) {
-  sum += 1 / number;
+for (let flag = 1; flag <= n; flag++) {
+  result += 1 / flag;
 }
 
-console.log(`h(10): ${sum}`);
+// 2,9289682539682538
+console.log(result)
