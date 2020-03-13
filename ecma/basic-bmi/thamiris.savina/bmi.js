@@ -1,13 +1,14 @@
-const weight = 200;
-const height = 1.5;
-let result;
-const bmi = weight/height**2;
+const weight = 150;
+const height = 2;
+const bmi = weight / height **2;
 
 if (bmi < 18.5){
-    result = 'Underweight' 	}
-else if (bmi <=24,9) {
-    'Normal weight '}
-else if (
-    'Overweight'	
-else if (
-    'Obesity' 
+    console.log("Underweight");
+} else if(bmi <= 24.9 ){
+    console.log("Normal weight");
+} else if(bmi <= 29.9 ){
+    console.log("Overweight");
+}else{
+    console.log("Obesity")
+}
+
