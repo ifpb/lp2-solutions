@@ -1,4 +1,5 @@
-const salario = 3000;
+const salario = 2000;
+
 
 if (salario <= 1903.98) {
     taxa = 0
