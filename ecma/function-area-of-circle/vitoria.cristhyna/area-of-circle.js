@@ -1,6 +1,5 @@
-let r = 1;
-function area(r){
-    let area = Math.PI * (r*r);
-    return area
+function area(r) {
+  return Math.PI * r ** 2;
 }
-console.log(area(r))
+
+module.exports = area;
