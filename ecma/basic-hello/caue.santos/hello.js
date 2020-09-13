@@ -1,2 +1,2 @@
 const name = 'Caue';
-console.log(`Hello, ${name}`);
+console.log(`Hello, ${name}!`);
