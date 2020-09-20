@@ -1,4 +1,4 @@
 const nome = "Victor";
-console.log("Hello " + nome);
+console.log("Hello, " + nome + "!");
 
 
