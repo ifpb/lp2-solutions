@@ -1,0 +1,17 @@
+{% extends "layout.njk" %}
+
+{% set title = "Flags" %}
+
+
+{% block content %}
+    <h1 class="my-5 text-center">{{ title }}</h1>
+        {% for flag in flags %}
+            <div class="card">
+                <div class="card-body p-0 ">
+                    <img src="{{ flag.imageFlag }}" class="w-200 normal"/>
+                    <img src="{{ flag.imageShiny }}" class="w-200 ativo" />
+                    <p class="d-inline text">{{ flag.nameFlag }}</p>
+                </div>
+            </div>
+        {% endfor %}
+{% endblock %}
